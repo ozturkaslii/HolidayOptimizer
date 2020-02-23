@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HolidayOptimizer.API</name>
+    </assembly>
+    <members>
+        <member name="M:HolidayOptimizer.API.Clients.NagerService.#ctor(System.Net.Http.HttpClient,HolidayOptimizer.API.Cache.IHolidayCache)">
+            <inheritdoc />
+        </member>
+        <member name="M:HolidayOptimizer.API.Clients.NagerService.GetCountryWithMostHolidayByYear(System.Int32)">
+            <summary>
+            Get country that has the most holidays in this specific year
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HolidayOptimizer.API.Clients.NagerService.GetMonthWithMostHolidays(System.Int32)">
+            <summary>
+            Get month which has most holiday
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HolidayOptimizer.API.Clients.NagerService.GetCountryWithMostUniqueHolidays(System.Int32)">
+            <summary>
+            Get days that no other country had a holiday
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HolidayOptimizer.API.Controllers.HolidayOptimizerController.GetCountryWithMostHolidaysByYear(System.Int32)">
+            <summary>
+            Get country with most holidays
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HolidayOptimizer.API.Controllers.HolidayOptimizerController.GetMonthWithMostHolidaysByYear(System.Int32)">
+            <summary>
+            Get month with most holidays
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HolidayOptimizer.API.Controllers.HolidayOptimizerController.GetCountryWithMostUniqueHolidaysByYear(System.Int32)">
+            <summary>
+            Get country with most unique holidays
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HolidayOptimizer.API.Models.HolidayModel">
+            <summary>
+            Holiday model
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.HolidayModel.CountryCode">
+            <summary>
+            Country code
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.HolidayModel.PublicHolidayClientModels">
+            <summary>
+            Public holidays
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.HolidayModel.TotalCount">
+            <summary>
+            Total holiday count for country
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.PublicHolidayClientModel.Date">
+            <summary>
+            Date of the holiday
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.PublicHolidayClientModel.LocalName">
+            <summary>
+            Local name of the holiday
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.PublicHolidayClientModel.Name">
+            <summary>
+            English name of the holiday
+            </summary>
+        </member>
+        <member name="P:HolidayOptimizer.API.Models.PublicHolidayClientModel.CountryCode">
+            <summary>
+            Country code
+            </summary>
+        </member>
+    </members>
+</doc>
